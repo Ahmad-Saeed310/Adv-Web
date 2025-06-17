@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        outfit: ['"Outfit"', 'sans-serif'],
+                        playfair: ['"Playfair Display"', 'serif'],
+                        poppins: ['"Poppins"', 'sans-serif'],
+                        roboto: ['"Roboto"', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Lawyer Website</title>
+</head>
+
+<body class=" h-screen w-full  m-0 p-0  font-poppins">
+    <div id="main">
+        <div id="nav" class="flex fixed  z-[999] items-center h-[10vh] w-full justify-between px-[5vh] pt-[4vh] ">
+            <div id="logo" class="h-[9vh] w-[vh]">
+                <img src="TLS Logo.png" alt="Logo" class="h-full w-full object-contain" />
+            </div>
+            <a href="#elems" class="h-[3vh] w-[3vh]  md:hidden "><img src="menu.png" alt=""></a>
+            <div id="elems"
+                class="flex font-poppins font-medium justify-between text-[3vh] gap-[5vh] capitalize md:block hidden">
+                <a href="#" class="">Home</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Practice Areas</a>
+                <a href="#" class="bg-green-950 rounded-lg text-green-100 px-[1.4vh] py-[.5vh]">Contact Us</a>
+            </div>
+
+        </div>
+
+
+        <div id="hero" class="relative  md:h-[135vh] h-[100dvh]   w-full ">
+            <div id="center" class="flex justify-center">
+                <div id="text" class="absolute  ">
+                    <div id="text1"
+                        class="flex items-center text-center w-[full] justify-center font-poppins font-regular mt-[20vh] md:mt-[15vh] text-[2vh] md:text-[3.5vh]">
+                        <div id="triumph" class="text-green-950 ">1K+ Triumph for People.</div>
+                    </div>
+                    <div id="heading"
+                        class="text-black font-playfair hidden md:block font-regular leading-none md:leading-relaxed flex items-center text-center text-green-950  justify-center text-[6vh] md:text-[10vh] pt-[-7vh]">
+                        Triangle Legal Services</div>
+                    <div id="heading"
+                        class="text-black font-playfair md:hidden font-regular leading-none md:leading-relaxed flex items-center text-center text-green-950  justify-center mt-[3vh] text-[6vh] md:text-[10vh] pt-[-7vh]">
+                        Triangle <br> Legal <br> Services</div>
+                    <div id="heading"
+                        class="text-black font-poppins font-regular flex items-center text-center  leading-none  text-green-950 mt-[2vh]  md:mt-[-3vh] justify-center  text-[3vh] md:text-[7vh] ">
+                        "Your Rights.Our Priority"</div>
+                    <div id="subheading"
+                        class="text-black font-poppins font-medium flex items-center text-center justify-center text-[1.6vh] md:text-[3vh] mx-[9vh]  sm:mx-[0vh] pt-[2vh] leading-none">
+                        We proudly serve individuals, families, and small businesses <br class="hidden md:block">
+                        with honest, effective, and compassionate legal support.</div>
+                    <div id="text2" class="flex items-center justify-center mt-[1vh]">
+                        <a href="#" class="bg-green-950 rounded-lg text-green-100 px-[1.4vh] py-[.5vh]">Share your
+                            Story.</a>
+
+                    </div>
+                </div>
+                <img src="Supreme Court stair png.png" alt="Hero Image"
+                    class=" h-[150vh] object-cover hidden md:block w-[150%] h-full w-full object-contain object-center mt-[-15vh] " />
+                <img src="supreme court mobile.png" alt="Hero Image"
+                    class=" h-[150vh] object-cover md:hidden w-[150%] h-full w-full object-contain object-center mt-[-8vh] " />
+            </div>
+
+        </div>
+        <div id="about" class="h-[30vh]    ">
+            <div id="headingabout"
+                class="font-playfair  text-[4vh] md:text-[8vh] font-semibold text-green-950 text-center pt-[4vh]  md:pt-[10vh] ">
+                About Us
+            </div>
+            <div id="textabout" class=" h-[20vh] w-full flex items-center mt-[3vh] mt-[0vh] justify-center">
+
+                <div id="text"
+                    class="text-black md:text-[2.6vh] text-[1.6vh] mx-[6vh] md:mx-[0vh] flex text-green-950  md:pt-[10vh] font-poppins leading-none tracking-tight">
+                    <div id="line" class="border-l-2 border-green-950 h-[vh] w-[2vh] md:w-[9vh] "></div>
+                    <h2 class="hidden md:block">Triangle Legal Services is a seasoned law firm with over 12 years of
+                        experience, having <br>
+                        successfully handled hundreds of cases. We offer comprehensivelegal support in family, <br>
+                        criminal, civil, corporate, FIA, and trademark matters.Our team is known for its strategic <br>
+                        approach, dedication, and results-driven advocacy. We are committed to protecting <br>
+                        your rights with personalized and effective legal solutions.</h2>
+                    <h2 class="text-base leading-none md:hidden">
+                        Triangle Legal Services is a trusted law firm with 12+ years of experience. We provide legal
+                        support in family, criminal, civil, corporate, FIA, and trademark cases — backed by strategy,
+                        dedication, and results.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div id="aboutpic" class="h-[30vh] md:h-[80vh] w-full capitalize  mt-[10vh] md:mt-[30vh] leading-none  ">
+            <div id="items1"
+                class="text-green-950 font-playfair text-[3vh] md:text-[10vh] font-semibold flex justify-center">
+                <div id="text1 " class="font-playfair ">experience of </div>
+                <div id="image"
+                    class="font-poppins text-green-50 flex  items-center px-[1vh] md:px-[3vh] mx-[.5vh] md:mx-[2vh] text-[3vh] md:text-[10vh] bg-green-950">
+                    12+
+                </div>
+                <div id="text2">Years.</div>
+            </div>
+            <div id="items1"
+                class="text-green-950 font-playfair font-semibold text-[3vh] md:text-[10vh] flex justify-center">
+                <div id="text1 " class="font-playfair ">Legal </div>
+                <div id="image" class="font-poppins   mx-[.5vh] md:mx-[2vh] flex  items-center  "><img
+                        src="law books.jpeg" class=" h-[4vh] w-[15vh]  md:h-[12vh] md:w-[30vh] object-cover" alt="">
+                </div>
+                <div id="text2">Support.</div>
+                <div id="text2" class=" text-center font-poppins md:block hidden items-center flex text-[1.5vh]">
+                    <div id="text1">When Injustice Stands, We Rise. <br>Your Fight Is Our Mission.</div>
+
+                </div>
+            </div>
+            <div id="items1"
+                class="text-green-950 font-playfair text-[3vh] md:text-[10vh] font-semibold font-semibold  flex justify-center">
+                <div id="image" class="font-poppins  flex  items-center   mx-[.5vh] md:mx-[2vh] text-[5vh] "><img
+                        src="gavel.jpg" class="md:h-[10vh] md:w-[20vh] h-[5vh] w-[10vh] object-cover" alt=""></div>
+                <div id="text1 " class="font-playfair ">Protecting You.</div>
+                <div id="line" class="flex items-center">
+
+                    <div id="text2" class="md:h-[.5vh] h-[.1vh] bg-green-950 w-[15vw]  my-4"></div>
+                </div>
+            </div>
+            <div id="items1"
+                class="text-green-950 font-playfair text-[3vh] md:text-[10vh] font-semibold flex justify-center">
+                <div id="text1 " class="font-playfair text-5vh]">Building Trust. </div>
+                <div id="text2"></div>
+                <div id="image" class="font-poppins mx-[.5vh] md:mx-[2vh] text-[10vh] flex  items-center text-[5vh] ">
+                    <img src="hnadshake.jpg" class="h-[4vh] w-[15vh]  md:h-[12vh] md:w-[30vh]  object-cover" alt="">
+                </div>
+            </div>
+            <div id="items1"
+                class="text-green-950 font-playfair text-[3vh] md:text-[10vh] font-semibold flex justify-center">
+                <div id="text1 " class="font-playfair text-5vh]"> </div>
+                <div id="image" class="font-poppins  flex  items-center  mx-[.5vh] md:mx-[2vh] text-[5vh] "><img
+                        src="fighting image.jpg" class="h-[4vh] w-[9vh]  md:h-[12vh] md:w-[30vh]  object-cover" alt="">
+                </div>
+                <div id="text2">Fighting Injustice.</div>
+            </div>
+            <div id="items1"
+                class="text-green-950 font-playfair text-[1.6vh] mt-[5vh] md:mt-[20vh] font-semibold flex justify-center">
+
+                <div id="text2">Triangle Legal Services</div>
+            </div>
+        </div>
+
+        <div id="about" class="md:h-[40vh]  h-[100vh] ">
+            
+            <div id="headingabout"
+                class="font-playfair text-[4vh] md:text-[8vh] font-semibold text-green-950 text-center  text-">
+                Practice Areas
+            </div>
+            <div id="textabout" class=" h-[20vh] w-full flex items-center mt-[3vh] mt-[0vh] justify-center">
+
+                <div id="text"
+                    class="text-black md:text-[2.6vh] text-[1.6vh] mx-[6vh] md:mx-[0vh] flex text-green-950  md:pt-[10vh] font-poppins leading-none tracking-tight">
+                    <div id="line" class="border-l-2 border-green-950 h-[vh] w-[2vh] md:w-[9vh]"></div>
+                    <h2 class="hidden md:block">We provide expert legal services across family, criminal, and civil law
+                        matters, along with FIA,
+                        <br>
+                        trademark, and corporate law. From handling divorces and criminal defense to managing <br>
+                        business and intellectual property issues, our team covers it all. Each case is approached <br>
+                        with care, strategy, and a commitment to results. At Triangle Legal Services, your legal needs
+                        <br>
+                        are in trusted hands.
+                    </h2>
+                    <p class="text-base  leading-none md:hidden">
+                        We offer expert legal services in family, criminal, civil, corporate, FIA, and trademark law.
+                        From divorce and defense to business and IP matters, our team delivers strategic, results-driven
+                        support. Your case is in trusted hands.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="Services" class="mt-[-70vh] md:mt-[0vh] ">
+
+            <div class="wrapper">
+                <div class="cards">
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/crime.jpg')] bg-cover bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    Criminal Law</div>
+
+                                <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                    Criminal charges can shake your sense of security and threaten everything you’ve
+                                    worked for. We understand the fear and uncertainty, and we stand with you—fighting
+                                    with strength to protect your rights and defend the life you’ve built.</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                    Criminal charges can feel overwhelming. We stand with you, fighting to protect your
+                                    rights and the life you've built.</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/family1.jpg')] bg-cover bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    Family Law</div>
+
+
+                                <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                    Family disputes affect more than just legal matters—they impact your peace of mind,
+                                    your relationships, and your future. We’re here to offer steady guidance, clear
+                                    legal advice, and compassionate support when it matters most. Whether it's divorce,
+                                    custody, or other family issues, you're not alone—we stand with you every step of
+                                    the way.</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                    We’ve successfully guided clients through divorce, custody battles, and complex
+                                    family disputes. Our team provides clear legal advice and steady support to protect
+                                    your family’s future.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/civil.jpg')] bg-cover bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    Civil Law</div>
+
+
+                                <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                    Civil disputes can bring stress and uncertainty into your daily life. At Triangle
+                                    Legal Services, we approach each case with clarity, care, and a focus on fair
+                                    resolution. Whether it’s a property issue, contract dispute, or personal grievance,
+                                    we work to restore peace and protect your interests..</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                    We’ve resolved property disputes, contract issues, and personal grievances with a
+                                    focus on fair outcomes. At Triangle Legal Services, we bring clarity and strategy to
+                                    every civil case we handle.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/SECP.jpg')] bg-cover bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    SECP Compliance</div>
+
+                               
+                                    <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                    SECP compliance doesn’t have to be complicated. We handle the paperwork, deadlines,
+                                    and legal fine print, so your team can focus on what they do best. With our
+                                    guidance, your company stays in step with the law—confidently, consistently, and
+                                    without the stress.</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                   SECP compliance is managed with precision—paperwork, deadlines, and legal details all handled efficiently. Triangle Legal Services keeps your company aligned with the law, minus the stress.
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/Trademark.jpg')] bg-cover bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    Trademark & IP Law</div>
+
+                            
+                                 <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                    Your ideas, brand, and creations are worth protecting—they represent your hard work
+                                    and identity. Whether you're registering a trademark, facing infringement, or
+                                    building something new, we help safeguard what’s uniquely yours. With clear legal
+                                    guidance, we make sure your intellectual property stays secure and truly yours.</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                  Trademarks, creative works, and brand assets are protected through strategic legal support. From registration to infringement defense, Triangle Legal Services ensures your intellectual property remains secure and truly yours.
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/corporate.jpg')] bg-cover bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    Corporate Law</div>
+
+                                
+                                     <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                    Business decisions affect everyone—founders, teams, and clients alike. Whether it’s
+                                    contracts, compliance, or conflict, legal issues can create stress across the board.
+                                    We provide steady, straightforward support to help your company stay protected and
+                                    your work run smoothly. No matter your role, we’re here to make the legal side
+                                    easier.</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                  Contracts, compliance, and internal conflicts are handled with clear legal guidance to keep your business protected. Triangle Legal Services supports decision-makers at every level, ensuring operations stay smooth and secure.
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card card1 gradient-red bg-[url('/fia.png')]    bg-center relative">
+                            <div id="insidecard">
+
+                                <div id="text1"
+                                    class="md:text-[10vh] text-[3vh] font-playfair absolute top-2 left-5 font-semibold text-green-50 ">
+                                    FIA & Regulatory Matters</div>
+
+                               
+                                     <div id="text2"
+                                    class="text-green-50 text-[3vh] hidden md:block absolute bottom-10 left-5 font-poppins leading-none mr-[25vh]">
+                                     Facing FIA or regulatory action can feel intimidating and uncertain. Whether it’s an
+                                    inquiry, investigation, or compliance issue, we stand by you with clear guidance and
+                                    firm legal protection. We help you navigate the process with confidence—protecting
+                                    your rights, your reputation, and your peace of mind.</div>
+                                <div id="text2"
+                                    class="text-green-50 text-[2vh] md:hidden absolute bottom-10 w-full left-5 font-poppins leading-none ">
+                                 FIA inquiries, investigations, and compliance issues are handled with firm legal strategy and clear guidance. Triangle Legal Services protects your rights, reputation, and peace of mind throughout the process.
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <div id="Testimonials" class="md:h-[160vh]  mt-[-50vh] ">
+            <div id="headingtestimonials"
+                class="font-playfair text-[5vh] md:text-[8vh] font-semibold text-green-950 text-center pt-[10vh] text-">Testimonials
+            </div>
+            <div id="contain1" class="flex md:flex-row flex-col justify-between">
+                <div id="foreign"
+                    class="md:w-[60vw] md:h-[60vh]  h-[35vh] w-[40vh] bg-green-950 bg-[url('/Desertt.png')] bg-cover bg-center  relative rounded-lg ml-[2vh] md:ml-[7vh] md:mr-[2vh]  mt-[5vh]">
+                    <div id="text1" class="text-green-50 text-[3vh] font-poppins font-regular pt-[2vh] pl-[2vh]">
+                        Customer Stories</div>
+                    <div id="text2"
+                        class="text-green-50 text-[1.4vh] md:text-[4.5vh] leading-none font-poppins font-light pt-[18vh] md:pt-[30vh] pl-[2vh]">“Even
+                        from abroad, they managed everything in Pakistan with full transparency. I never felt left out.
+                        Excellent service for overseas Pakistanis.”</div>
+                    <div id="text2"
+                        class="text-green-50 text-[2.5vh] font-poppins absolute bottom-5 font-regular pt-[2vh] pl-[2vh]">
+                        Touqeer Asif, Jeddah KSA</div>
+                </div>
+
+                <div id="foreign"
+                    class="md:w-[30vw] md:h-[60vh]  h-[35vh] w-[40vh] bg-green-50 text-green-950 rounded-lg ml-[0vh] ml-[2vh]  md:mr-[7vh] relative mt-[5vh]">
+                    <div id="text1" class="text-green-950 text-[3vh] font-poppins font-regular pt-[2vh] pl-[2vh]">Facts
+                        & Numbers</div>
+                    <div id="text2"
+                        class="text-green-950 md:text-[20vh] text-[15vh] tracking-tighter md:mt-[15vh] font-poppins font-regular pt-[2vh] pl-[2vh]">
+                        95%</div>
+                    <div id="text2"
+                        class="text-green-950 text-[2.5vh] font-poppins absolute leading-none bottom-5 font-regular pt-[2vh] pl-[2vh]">
+                        of customers <br>recommended our <br> services </div>
+
+                </div>
+
+            </div>
+            <div id="contain1" class="flex md:flex-row flex-col justify-between">
+                <div id="foreign" class="md:w-[45vw] md:h-[60vh]  h-[35vh] w-[40vh]  bg-green-50 relative rounded-lg ml-[2vh] md:ml-[7vh] ml:mr-[2vh] mt-[5vh]">
+                    <div id="text1"
+                        class="w-[70vw] h-[20vh] md:w-[80vh] bg-[url('/civill.png')] bg-center bg-cover rounded-lg bg-white mx-[4vh] mt-[2vh] md:mt-[4vh]">
+
+                    </div>
+                    <div id="text2"
+                        class="text-green-950 md:text-[2.5vh] text-[1.4vh] font-poppins absolute bottom-5 font-regular ml-[2vh] mb-[2.7vh] md:mb-[12vh] pl-[2vh]">
+                        Triangle Legal Services handled my case with care and professionalism. I always felt supported
+                        and understood. Highly recommended.</div>
+                    <div id="text2"
+                        class="text-green-950 text-[2.5vh]  ml-[2vh] font-poppins absolute bottom-5 font-regular pt-[2vh] pl-[2vh]">
+                        Naheed Azhar, Rawalpindi</div>
+                </div>
+                <div id="foreign" class="md:w-[55vw] md:h-[60vh]  h-[35vh] w-[40vh] bg-green-950 relative rounded-lg ml-[2vh] mt-[4vh] mr-[7vh] md:mt-[5vh]">
+                    <div id="text1" class="text-green-50 text-[3vh] font-poppins font-regular pt-[2vh] pl-[2vh]">Review
+                    </div>
+                    <div id="text2"
+                        class="text-green-50 md:text-[7vh] text-[3vh] leading-none font-poppins font-light pt-[2vh] pl-[2vh]">“A
+                        broken contract almost shut down my business. They got me justice fast. Their team treated my
+                        case like it was their own.”</div>
+                    <div id="text2"
+                        class="text-green-50 text-[2.5vh] font-poppins absolute bottom-5 font-regular pt-[2vh] pl-[2vh]">
+                        Bilal Ahmad, Islamabad</div>
+                </div>
+
+            </div>
+        </div>        <div id="Contact" class="md:h-[120vh] h-[220vh] mt-[20vh] md:mt-[20vh] w-full">
+            <!-- Contact section header -->
+            <div id="headingcontact" class="font-playfair text-[5vh] md:text-[8vh] font-semibold text-green-950 text-center mb-[5vh]">
+                Contact Us
+            </div>
+            
+            <!-- Contact intro text -->
+            <div id="textcontact" class="h-[10vh] w-full flex items-center justify-center mb-[5vh]">
+                <div id="text" class="text-black md:text-[2.6vh] text-[1.6vh] mx-[6vh] md:mx-[0vh] flex text-green-950 font-poppins leading-none tracking-tight">
+                    <div id="line" class="border-l-2 border-green-950 h-[vh] w-[2vh] md:w-[9vh]"></div>
+                    <h2 class="hidden md:block">
+                        Your legal journey begins with a conversation. Reach out to Triangle Legal Services <br>
+                        for professional guidance, support, and solutions tailored to your unique situation. <br>
+                        Whether you're facing a complex legal challenge or simply need advice, we're here <br>
+                        to listen and help guide you toward the best possible outcome.
+                    </h2>
+                    <p class="text-base leading-none md:hidden">
+                        Your legal journey begins with a conversation. Reach out to Triangle Legal Services for professional guidance and solutions tailored to your unique needs.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contact section main content -->
+            <div class="flex flex-col md:flex-row justify-between md:px-[7vh] px-[3vh] gap-[5vh]">
+                <!-- Contact Form -->
+                <div class="md:w-[60%] w-full bg-green-50 rounded-lg p-[3vh] shadow-lg">
+                    <h2 class="font-playfair text-green-950 text-[4vh] font-semibold mb-[2vh]">Share Your Story</h2>
+                    <p class="font-poppins text-green-950 text-[2vh] mb-[3vh]">Tell us about your case, and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+                            <div>
+                                <label for="firstName" class="block font-poppins text-green-950 text-[1.8vh] mb-1">First Name</label>
+                                <input type="text" id="firstName" placeholder="Your first name" class="w-full px-3 py-2 border border-green-200 rounded-md focus:outline-none focus:ring-2 focus:ring-green-950">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block font-poppins text-green-950 text-[1.8vh] mb-1">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Your last name" class="w-full px-3 py-2 border border-green-200 rounded-md focus:outline-none focus:ring-2 focus:ring-green-950">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block font-poppins text-green-950 text-[1.8vh] mb-1">Email Address</label>
+                            <input type="email" id="email" placeholder="Your email address" class="w-full px-3 py-2 border border-green-200 rounded-md focus:outline-none focus:ring-2 focus:ring-green-950">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block font-poppins text-green-950 text-[1.8vh] mb-1">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Your phone number" class="w-full px-3 py-2 border border-green-200 rounded-md focus:outline-none focus:ring-2 focus:ring-green-950">
+                        </div>
+                        
+                        <div>
+                            <label for="practiceArea" class="block font-poppins text-green-950 text-[1.8vh] mb-1">Practice Area</label>
+                            <select id="practiceArea" class="w-full px-3 py-2 border border-green-200 rounded-md focus:outline-none focus:ring-2 focus:ring-green-950">
+                                <option value="" selected disabled>Select a practice area</option>
+                                <option value="family">Family Law</option>
+                                <option value="criminal">Criminal Law</option>
+                                <option value="civil">Civil Law</option>
+                                <option value="corporate">Corporate Law</option>
+                                <option value="trademark">Trademark & IP Law</option>
+                                <option value="fia">FIA & Regulatory Matters</option>
+                                <option value="secp">SECP Compliance</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block font-poppins text-green-950 text-[1.8vh] mb-1">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your case" class="w-full px-3 py-2 border border-green-200 rounded-md focus:outline-none focus:ring-2 focus:ring-green-950"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="bg-green-950 text-green-50 font-poppins font-medium py-2 px-6 rounded-md hover:bg-green-900 transition duration-300">Submit Your Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="md:w-[40%] w-full flex flex-col gap-[4vh]">
+                    <!-- Office Location -->
+                    <div class="bg-green-950 rounded-lg p-[3vh] text-green-50 shadow-lg">
+                        <h3 class="font-playfair text-[3vh] mb-[2vh]">Office Location</h3>
+                        <p class="font-poppins text-[1.8vh] mb-[1vh]"><span class="font-medium">Islamabad Office:</span></p>
+                        <p class="font-poppins text-[1.8vh]">
+                            Suite 205, Capitol Plaza<br>
+                            Blue Area, Islamabad<br>
+                            Pakistan
+                        </p>
+                        
+                        <div class="mt-[3vh] rounded-md overflow-hidden h-[25vh]">
+                            <!-- Replace with an actual map iframe or image -->
+                            <div class="w-full h-full bg-green-900 flex items-center justify-center text-green-100">
+                                <img src="Supreme Court stair.png" alt="Office Location" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information Box -->
+                    <div class="bg-green-50 rounded-lg p-[3vh] text-green-950 shadow-lg">
+                        <h3 class="font-playfair text-[3vh] mb-[2vh]">Get in Touch</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <a href="mailto:lawhelp@trianglelegalservice.com" class="font-poppins text-[1.8vh]">lawhelp@trianglelegalservice.com</a>
+                            </div>
+                            
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <p class="font-poppins text-[1.8vh] cursor-pointer" onclick="copyToClipboard('+92 305 4279516')">+92 305 4279516</p>
+                            </div>
+                            
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p class="font-poppins text-[1.8vh]">
+                                    Monday - Friday: 9am - 6pm<br>
+                                    Saturday: 10am - 2pm<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media -->
+                        <div class="mt-[2vh]">
+                            <h4 class="font-playfair text-[2vh] mb-[1vh]">Connect With Us</h4>
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-green-950 flex items-center justify-center text-green-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-green-950 flex items-center justify-center text-green-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-green-950 flex items-center justify-center text-green-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-green-950 flex items-center justify-center text-green-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emergency Contact Box -->
+            <div class="bg-green-950 text-green-50 rounded-lg p-[3vh] mt-[5vh] md:mx-[7vh] mx-[3vh] shadow-lg">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div>
+                        <h3 class="font-playfair text-[3vh] md:mb-[1vh]">Need Urgent Legal Assistance?</h3>
+                        <p class="font-poppins text-[1.8vh]">Our 24/7 emergency legal helpline is available for critical situations</p>
+                    </div>
+                    <div class="mt-[2vh] md:mt-0">
+                        <a href="tel:+923054279516" class="bg-green-50 text-green-950 font-poppins font-medium py-2 px-6 rounded-md hover:bg-green-100 transition duration-300 inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call Emergency Line
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center font-poppins text-[1.5vh] mt-[3vh]">
+                © 2025 Triangle Legal Services. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scriptt.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
